@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+    <script src="calculator.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div id="outputArea">
+          <div data-previous-operand class="previous-operand"></div>
+          <div data-current-operand class="current-operand"></div>
+        </div>
+        <table>
+          <tr>
+            <td data-all-clear id="AC" class="other">AC</td>
+            <td data-toggle-negative id="negative" class="other">+/-</td>
+            <td data-percent class="other">%</td>
+            <td data-operator id="devide" class="operator">/</td>
+          </tr>
+          <tr>
+            <td data-numbers class="numbers">7</td>
+            <td data-numbers class="numbers">8</td>
+            <td data-numbers class="numbers">9</td>
+            <td data-operator id="multiply" class="operator" value="*">x</td>
+          </tr>
+          <tr>
+            <td data-numbers class="numbers">4</td>
+            <td data-numbers class="numbers">5</td>
+            <td data-numbers class="numbers">6</td>
+            <td data-operator id="substarct" class="operator">-</td>
+          </tr>
+          <tr>
+            <td data-numbers class="numbers">1</td>
+            <td data-numbers class="numbers">2</td>
+            <td data-numbers class="numbers">3</td>
+            <td data-operator id="add" class="operator">+</td>
+          </tr>
+        </table>
+        <table id="bottomTable">
+          <tr>
+            <td data-numbers id="zero" class="numbers">0</td>
+            <td data-numbers class="numbers">.</td>
+            <td data-equals id="equals" class="operator">=</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

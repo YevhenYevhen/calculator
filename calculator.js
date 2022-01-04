@@ -11,7 +11,7 @@ class Calculator {
 	}
 	appendNumber(number, limit) {
 		if(this.currentOperand.toString().length > limit) return
-		if (number === '.' && this.currentOperand.includes('.')) return
+		if (number === '.' && this.currentOperand.toString().includes('.')) return
 		if (number === '.' && !this.currentOperand.toString().length) this.currentOperand += '0'
 		this.currentOperand = this.currentOperand.toString() + number.toString();
 	}
